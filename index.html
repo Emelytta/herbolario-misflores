@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herbolario misFlores</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img class="logo" src="img/logo.png" alt="LogoMisFlores"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="carrito.html"><img src="img/carrito-icono.png" alt=""></a></li>
+            </ul>
+        </nav>
+        <!--<img class="imagen-cabecera" src="img/background-header.png" alt="">-->
+    </header>
+    <main>
+        <!--Esto es el eslogan-->
+        <section class="eslogan">
+            <h1>Donde la salud florece naturalmente</h1>
+        </section>
+        <!--Productos en Descuentos-->
+        <section class="descuentos">
+            <h2>DESCUENTOS DE PRIMAVERA</h2>
+            <div class="productos">
+                
+                <div class="producto">
+                    <div class="discount-tag">- OFERTAS -</div>
+                    <figure><img src="img/hojas de menta.jpg" alt="Té de Menta"><figcaption>Té de Menta</figcaption></figure>
+                    <p class="precio-antes">35€ </p> <p>24.5€</p>
+                    <a href="carrito.html"><button class="boton-comprar">Comprar</button></a>   <br> 
+                    <button class="openModalBtn" data-modal="modal1">Ver detalles</button>
+                </div>
+                <div class="producto">
+                    <figure><img src="img/aceite-lavanda.jpg" alt="Aceite de Lavanda"><figcaption>Aceite de Lavanda</figcaption></figure>
+                    <p class="precio-antes">65€ </p> <p>45.5€</p>
+                    <a href="carrito.html"><button class="boton-comprar">Comprar</button></a> <br>   
+                    <button class="openModalBtn" data-modal="modal2">Ver detalles</button>
+                </div>
+                <div class="producto">
+                    <figure><img src="img/hojas manzanilla.jpg" alt="Manzanilla"><figcaption>Manzanilla</figcaption></figure>
+                    <p class="precio-antes">35€ </p> <p>24.5€</p>
+                    <a href="carrito.html"><button class="boton-comprar">Comprar</button></a> <br>    
+                    <button class="openModalBtn" data-modal="modal3">Ver detalles</button>
+                </div>
+            </div>
+        </section>
+        <section class="destacados">
+            <h2>PRODUCTOS DESTACADOS</h2>
+            <section class="destacados">
+                <div class="productos-destacado">
+                    <div class="producto-destacado">
+                        <figure><img src="img/aceite-rosa-mosqueta-foto.jpg" alt="Aceite de rosa mosqueta"><figcaption>Aceite de Rosa Mosqueta</figcaption></figure>
+                        <p>6€</p>
+                        <a href="carrito.html"><button class="boton-comprar">Comprar</button></a> <br> 
+                        <button class="openModalBtn" data-modal="modal4">Ver detalles</button>
+                    </div>
+                    <div class="producto-destacado">
+                        <figure><img src="img/paciglora_.jpg" alt="Té Premium paciflora"><figcaption>Paciflora Premium</figcaption></figure>
+                        <p>35€</p>
+                        <button class="boton-comprar">Comprar</button>   <br> 
+                        <button class="openModalBtn" data-modal="modal5">Ver detalles</button>
+                    </div>
+                    <div class="producto-destacado">
+                        <figure><img src="img/jabon-lavanda.jpg" alt="Jabón de Lavanda"><figcaption>Jabón de Lavanda</figcaption></figure>
+                        <p>16€</p>
+                        <a href="carrito.html"><button class="boton-comprar">Comprar</button></a><br>    
+                        <button class="openModalBtn" data-modal="modal6">Ver detalles</button>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section class="ventanaemergente">
+             <!-- Modal Producto 1 -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Té de Menta</h2>
+            <p>🌿 MENTA PIPERITA PREMIUM - Hemos cuidadosamente seleccionado hojas menta piperita Ecológica por sus propiedades y por su calidad gustativa. Más rica en mentol que la propia menta verde o menta marroquí, su sabor es intensamente fresco
+                MENTA SECA ECOLÓGICA - Nuestras hojas de menta cuentan con la certificación de agricultura ecológica. Su cultivo ha sido realizado sin utilizar productos químicos para respetar a la Naturaleza y a tu Salud</p>
+        </div>
+    </div>
+
+    <!-- Modal Producto 2 -->
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Aceite de Lavanda</h2>
+            <p> ACEITE DE LAVANDA PURO: Nuestro aceite esencial Mearome es 100% natural y ecológico, se obtiene por destilación por vapor de agua de los tallos floridos de la Lavanda (Lavandula angustifolia). Su aroma es ideal para utilizar en humificadores o difusores y perfumar tu hogar. El bote es de 30 ml y contiene un cuentagotas con tapa de seguridad.</p>
+        </div>
+    </div>
+
+    <!-- Modal Producto 3 -->
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Infusión de Manzanilla</h2>
+            <p>INFUSIÓN RELAJANTE: Disfruta de la calma y tranquilidad con esta manzanilla natural ecológica, ideal para aliviar el estrés.
+                El producto contiene flores de manzanilla pura y limpia, sin aditivos ni conservantes, para una experiencia natural.
+        </p>
+        </div>
+    </div>
+    <!-- Modal Producto 4 -->
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Aceite de Rosa Mosqueta</h2>
+            <p>🌿 MENTA PIPERITA PREMIUM - Hemos cuidadosamente seleccionado hojas menta piperita Ecológica por sus propiedades y por su calidad gustativa. Más rica en mentol que la propia menta verde o menta marroquí, su sabor es intensamente fresco
+                MENTA SECA ECOLÓGICA - Nuestras hojas de menta cuentan con la certificación de agricultura ecológica. Su cultivo ha sido realizado sin utilizar productos químicos para respetar a la Naturaleza y a tu Salud</p>
+        </div>
+    </div>
+
+    <!-- Modal Producto 5 -->
+    <div id="modal5" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Te de Paciflora</h2>
+            <p> ACEITE DE LAVANDA PURO: Nuestro aceite esencial Mearome es 100% natural y ecológico, se obtiene por destilación por vapor de agua de los tallos floridos de la Lavanda (Lavandula angustifolia). Su aroma es ideal para utilizar en humificadores o difusores y perfumar tu hogar. El bote es de 30 ml y contiene un cuentagotas con tapa de seguridad.</p>
+        </div>
+    </div>
+
+    <!-- Modal Producto 6 -->
+    <div id="modal6" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Jabón de Lavanda</h2>
+            <p>INFUSIÓN RELAJANTE: Disfruta de la calma y tranquilidad con esta manzanilla natural ecológica, ideal para aliviar el estrés.
+                El producto contiene flores de manzanilla pura y limpia, sin aditivos ni conservantes, para una experiencia natural.
+        </p>
+        </div>
+
+        
+    </div>
+        </section>
+
+    </main>
+    <footer>
+        <section class="contacto">
+            <h2 class="contactanos">CONTÁCTANOS</h2>
+            <div class="datos-contacto">
+                <div class="dato"><a href="https://maps.app.goo.gl/T55HKqJ562R8hUNR9" target="_blank"><img src="img/ubicacion-icono.png" alt="ubicacion"></a>
+                    <p class="parrafo-dato">Dirección: Calle Flores 10, Madrid</p>
+                </div>
+                <div class="dato"><a href="contacto.html"><img src="img/telefono-icono.png" alt="telefono"></a>
+                    <p class="parrafo-dato">Teléfono: +34 900 50 50 50</p>
+                </div>
+                <div class="dato"><a href="https://login.live.com/login.srf?wa=wsignin1.0&rpsnv=173&ct=1742567370&rver=7.5.2211.0&wp=MBI_SSL&wreply=https%3a%2f%2foutlook.live.com%2fowa%2f%3fnlp%3d1%26cobrandid%3dab0455a0-8d03-46b9-b18b-df2f57b9e44c%26RpsCsrfState%3d8c94fef8-e5dd-8610-1bbf-679c07a776c4&id=292841&aadredir=1&CBCXT=out&lw=1&fl=dob%2cflname%2cwld&cobrandid=ab0455a0-8d03-46b9-b18b-df2f57b9e44c" target="_blank"><img src="img/email-icono.png" alt="email"></a>
+                    <p class="parrafo-dato">Email: info@misflores.es</p>
+                </div>
+        </div>
+        </section>
+        <section class="final">
+            <div class="copyright"> copyright © 2025 Mi Sitio Web</div>
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank" title="Facebook">
+                    <img src="img/Instagram.png" alt="instagram">
+                </a>
+                <a href="https://instagram.com" target="_blank" title="Instagram">
+                    <img src="img/Facebook.png" alt="facebook">
+                </a>
+                <a href="https://x.com" target="_blank" title="X (anteriormente Twitter)">
+                    <img src="img/X.png" alt="x">
+                </a>
+            </div>
+            
+    
+               
+
+
+        </section>
+    </footer>
+<script>
+// Obtener todos los botones de apertura de los modales
+const openModalBtns = document.querySelectorAll(".openModalBtn");
+const modals = document.querySelectorAll(".modal");
+const closeBtns = document.querySelectorAll(".close");
+
+// Función para abrir la ventana emergente correspondiente
+openModalBtns.forEach(btn => {
+    btn.addEventListener("click", function() {
+        const modalId = this.getAttribute("data-modal"); // Obtener el ID del modal
+        const modal = document.getElementById(modalId);
+        modal.style.display = "block";
+    });
+});
+
+// Función para cerrar las ventanas emergentes
+closeBtns.forEach(btn => {
+    btn.addEventListener("click", function() {
+        const modal = this.closest(".modal");
+        modal.style.display = "none";
+    });
+});
+
+// Cerrar la ventana emergente si el usuario hace clic fuera de ella
+window.addEventListener("click", function(event) {
+    modals.forEach(modal => {
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    });
+});
+</script>
+
+</body>
+</html>

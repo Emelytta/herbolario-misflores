@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>carrito</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img class="logo" src="img/logo.png" alt="LogoMisFlores"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="carrito.html"><img src="img/carrito-icono.png" alt=""></a></li>
+            </ul>
+        </nav>
+        <!--<img class="imagen-cabecera" src="img/background-header.png" alt="">-->
+    </header>
+        <main>
+            <h1>Productos de Herbolario</h1>
+    <div class="productos-carrito">
+        
+        <div class="producto-carrito" data-nombre="Té de Manzanilla" data-precio="35">
+            <h2>Té de Manzanilla</h2>
+            <img src="img/flores de manzanilla.jpg" alt="manzanilla" width="30%">
+            <p>Precio: $35</p>
+            <button onclick="agregarAlCarrito(this)">Agregar al carrito</button>
+        </div>
+        <div class="producto-carrito" data-nombre="Lavanda" data-precio="40">
+            <h2>Aceite de Lavanda</h2>
+            <img src="img/aceite-lavanda.jpg" alt="manzanilla" width="30%">
+            <p>Precio: $40</p>
+            <button onclick="agregarAlCarrito(this)">Agregar al carrito</button>
+        </div>
+        <div class="producto-carrito" data-nombre="Mosqueta" data-precio="65">
+            <h2>Aceite de Rosa Mosqueta</h2>
+            <img src="img/aceite-rosa-mosqueta-foto.jpg" alt="aceite de rosa mosqueta" width="30%">
+            <p>Precio: $65</p>
+            <button onclick="agregarAlCarrito(this)">Agregar al carrito</button>
+        </div>
+        <div class="producto-carrito" data-nombre="menta" data-precio="8">
+            <h2>Te de Menta</h2>
+            <img src="img/hojas de menta 2.jpg" alt="menta" width="30%">
+            <p>Precio: $40</p>
+            <button onclick="agregarAlCarrito(this)">Agregar al carrito</button>
+        </div>
+        <div class="producto-carrito" data-nombre="jabon-lavanda" data-precio="25">
+            <h2>Jabon Lavanda</h2>
+            <img src="img/jabon-lavanda-foto_.jpg" alt="jabon" width="30%">
+            <p>Precio: $25</p>
+            <button onclick="agregarAlCarrito(this)">Agregar al carrito</button>
+        </div>
+        <div class="producto-carrito" data-nombre="paciflora" data-precio="35">
+            <h2>Paciflora</h2>
+            <img src="img/paciglora_.jpg" alt="paciflora" width="30%">
+            <p>Precio: $35</p>
+            <button onclick="agregarAlCarrito(this)">Agregar al carrito</button>
+        </div>
+        
+
+
+
+
+    </div>
+    
+    <h2>Carrito de Compras</h2>
+    <div class="carrito">
+        <ul id="lista-carrito"></ul>
+        <p>Total: $<span id="total">0</span></p>
+    </div>
+    
+    
+        </main>
+
+
+        <footer>
+            <section class="contacto">
+                <h2 class="contactanos">CONTÁCTANOS</h2>
+                <div class="datos-contacto">
+                    <div class="dato"><a href="https://maps.app.goo.gl/T55HKqJ562R8hUNR9" target="_blank"><img src="img/ubicacion-icono.png" alt="ubicacion"></a>
+                        <p class="parrafo-dato">Dirección: Calle Flores 10, Madrid</p>
+                    </div>
+                    <div class="dato"><a href="contacto.html"><img src="img/telefono-icono.png" alt="telefono"></a>
+                        <p class="parrafo-dato">Teléfono: +34 900 50 50 50</p>
+                    </div>
+                    <div class="dato"><a href="https://login.live.com/login.srf?wa=wsignin1.0&rpsnv=173&ct=1742567370&rver=7.5.2211.0&wp=MBI_SSL&wreply=https%3a%2f%2foutlook.live.com%2fowa%2f%3fnlp%3d1%26cobrandid%3dab0455a0-8d03-46b9-b18b-df2f57b9e44c%26RpsCsrfState%3d8c94fef8-e5dd-8610-1bbf-679c07a776c4&id=292841&aadredir=1&CBCXT=out&lw=1&fl=dob%2cflname%2cwld&cobrandid=ab0455a0-8d03-46b9-b18b-df2f57b9e44c" target="_blank"><img src="img/email-icono.png" alt="email"></a>
+                        <p class="parrafo-dato">Email: info@misflores.es</p>
+                    </div>
+            </div>
+            </section>
+            <section class="final">
+                <div class="copyright"> copyright © 2025 Mi Sitio Web</div>
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank" title="Facebook">
+                        <img src="img/Instagram.png" alt="instagram">
+                    </a>
+                    <a href="https://instagram.com" target="_blank" title="Instagram">
+                        <img src="img/Facebook.png" alt="facebook">
+                    </a>
+                    <a href="https://x.com" target="_blank" title="X (anteriormente Twitter)">
+                        <img src="img/X.png" alt="x">
+                    </a>
+                </div>
+                
+        
+                   
+    
+    
+            </section>
+        </footer>
+
+    <script>
+        let carrito = [];
+
+        function agregarAlCarrito(boton) {
+            const producto = boton.parentElement;
+            const nombre = producto.getAttribute('data-nombre');
+            const precio = parseFloat(producto.getAttribute('data-precio'));
+            
+            carrito.push({ nombre, precio });
+            actualizarCarrito();
+        }
+        
+        function actualizarCarrito() {
+            const listaCarrito = document.getElementById('lista-carrito');
+            const totalElemento = document.getElementById('total');
+            
+            listaCarrito.innerHTML = '';
+            let total = 0;
+            
+            carrito.forEach((item, index) => {
+                const li = document.createElement('li');
+                li.textContent = `${item.nombre} - $${item.precio}`;
+                
+                const botonEliminar = document.createElement('button');
+                botonEliminar.textContent = 'Eliminar';
+                botonEliminar.onclick = () => eliminarDelCarrito(index);
+                
+                li.appendChild(botonEliminar);
+                listaCarrito.appendChild(li);
+                total += item.precio;
+            });
+            
+            totalElemento.textContent = total.toFixed(2);
+        }
+
+        function eliminarDelCarrito(index) {
+            carrito.splice(index, 1);
+            actualizarCarrito();
+        }
+    </script>
+</body>
+</html>
